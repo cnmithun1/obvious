@@ -62,6 +62,7 @@ public class MainActivity extends AppCompatActivity {
             Gson gson = builder.create();
             JSONArray jsonArray = new JSONArray(loadJSONFromAsset());
             Log.e("mithun", "m_jArry -->" + jsonArray.length());
+            nasaModelArrayList = new ArrayList();
             for (int i = 0; i < jsonArray.length(); i++) {
                 NasaModel nm = gson.fromJson(jsonArray.getString(i), NasaModel.class);
                 nasaModelArrayList.add(nm);

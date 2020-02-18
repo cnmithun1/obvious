@@ -2,8 +2,12 @@
 <resources>
 
     <dimen name="five">5dp</dimen>
+    <dimen name="ten">10dp</dimen>
+    <dimen name="twentyFive">25dp</dimen>
+    <dimen name="thirty">30dp</dimen>
     <dimen name="fifteen">15dp</dimen>
     <dimen name="eighteen">18dp</dimen>
     <dimen name="hundredForty">140dp</dimen>
+    <dimen name="twoFifty">250dp</dimen>
 
 </resources>
