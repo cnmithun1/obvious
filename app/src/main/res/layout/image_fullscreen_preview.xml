@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/parentLayout">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/twoFifty"
+        android:id="@+id/ImageLayout">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/nasaImage"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/date"
+                android:layout_gravity="bottom|left"
+                android:layout_marginLeft="@dimen/ten"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u00a9"
+                android:layout_gravity="bottom|right"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginRight="@dimen/ten"/>
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/textlayout"
+        android:layout_below="@+id/ImageLayout"
+        android:layout_margin="@dimen/five">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/title"
+                    android:layout_marginTop="10dp"
+                    android:textSize="@dimen/thirty"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/description"
+                    android:layout_below="@+id/title"
+                    android:layout_marginTop="@dimen/ten"
+                    android:textSize="@dimen/twentyFive"/>
+
+
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+</RelativeLayout>
